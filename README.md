@@ -1,5 +1,7 @@
 # BHX
-- Awesome tweak for X
+- Awesome tweak for [X](https://apps.apple.com/us/app/x/id333903271)
+> [!NOTE]
+> **If you experienced any issue, please report it [here](https://github.com/BandarHL/BHTwitter/issues)**
 
 # Features
 - Download Videos (even if account private).
