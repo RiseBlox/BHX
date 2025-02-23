@@ -19,14 +19,14 @@ on:
         type: string
       deploy_format:
         description: "Deployment format"
-        default: sideloaded
+        default: rootfull
         required: true
         type: choice
         options:
           - rootfull
-          - sideloaded
-          - trollstore
           - rootless
+          - trollstore
+          - sideloaded
       commit_id:
         description: "(Optional) Commit ID to build at"
         default: ""
