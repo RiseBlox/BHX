@@ -2,6 +2,10 @@
 - Awesome tweak for X
 > Report issue(s) [here](https://github.com/BandarHL/BHTwitter/issues)
 
+# Downloads
+- Jailed (Normal and Trollstore): [here](https://github.com/RiseBlox/BHX/releases/latest)
+- Jailbroken (Rootfull and Rootless): [here](https://github.com/RiseBlox/BHX/releases/tag/v4.4_Tweaks)
+
 # Features
 - Download Videos (even if account private).
 - Custom Tab Bar
