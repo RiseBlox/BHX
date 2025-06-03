@@ -1,4 +1,4 @@
-name: Build and Release BHTwitter
+name: Build and Release BHX
 
 on:
   workflow_dispatch:
@@ -49,7 +49,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build BHTwitter
+    name: Build BHX
     runs-on: macos-13
     permissions:
       contents: write
@@ -103,7 +103,7 @@ jobs:
         env:
           THEOS: ${{ github.workspace }}/theos
 
-      - name: Get BHTwitter Version
+      - name: Get BHX Version
         run: |
           BHTWITTER_VERSION=$(awk '/Version:/ {print $2}' main/control)
           echo "BHTWITTER_VERSION=${BHTWITTER_VERSION}" >> "$GITHUB_ENV"
@@ -147,7 +147,7 @@ jobs:
         if: ${{ inputs.upload_artifact }}
         uses: actions/upload-artifact@v4
         with:
-          name: BHTwitter_${{ env.BHTWITTER_VERSION }}
+          name: BHX_${{ env.BHTWITTER_VERSION }}
           path: ${{ github.workspace }}/main/packages/${{ steps.package_name.outputs.package }}
           if-no-files-found: error
 
@@ -159,6 +159,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ env.BHTWITTER_VERSION }}
-          name: v${{ env.BHTWITTER_VERSION }} - BHTwitter
+          name: v${{ env.BHTWITTER_VERSION }} - BHX
           files: main/packages/${{ steps.package_name.outputs.package }}
           draft: true
