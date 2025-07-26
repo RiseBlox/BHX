@@ -1,7 +1,7 @@
 # BHX
 An awesome tweak for X that enhances your experience with additional features and customization options. Get rid of ads, gain access to X Premium features for free and much much more!
 
-# Downloads
+## 📥 Downloads
 - Jailed (Normal and Trollstore): [here](https://github.com/RiseBlox/BHX/releases/latest)
 - Jailbroken (Rootfull and Rootless): [here](https://github.com/RiseBlox/BHX/releases/tag/v4.4_Tweaks)
 ## 🧩 Features
